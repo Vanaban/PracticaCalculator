@@ -1,0 +1,169 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+body{
+width: 100%;
+height: 100vh;
+display: flex;
+justify-content: center;
+align-content: center;
+background-color: rgb(43, 43, 43);
+padding: 20px;
+}
+.Superior{
+position: absolute;
+width: 384px;
+height: 20px;
+background-color:rgb(0, 216, 235);
+border-radius: 20px 15px 0px 0px;
+}
+.BodyCalculator{
+width: 384px;
+height: 600px;
+overflow: hidden;
+background-color: white;
+box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+border-radius: 5%;
+}
+#Result{
+width: 384px;
+height: 96px;
+outline: 0;
+border: 0;
+padding: 0px 20px 0px 20px;
+font-size: 24px;
+font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+#Result:hover{
+    transform: scale(1.1);
+    cursor:zoom-in ;
+}
+@keyframes ken-burn-in {
+    0% {
+        transform: scale(1.3);
+    }
+   
+    100% {
+        transform: scale(1);
+    }
+   }
+
+.NumeralContainer{
+    width: 100%;
+    height: 96px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 28px;
+    font-size: 24px;
+    font-weight: bold;
+    background-color: rgb(1, 180, 212);
+   
+}
+.NumeralContainer2{
+    width: 100%;
+    height: 128px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding: 0px 20px 0px 20px;
+    background-color: rgb(0, 216, 235);
+}
+
+.Numbutton{
+    width: 64px;
+    height: 64px;
+    background-color: white;
+    border-radius: 25%;
+    font-size: 24px;
+    font-weight: bold;
+    border: 0;
+    cursor: pointer;
+}
+.Numbutton:hover{
+ background-color: rgb(55, 44, 44);
+ color: whitesmoke;
+ box-shadow: 1px 1px 5px 1px #000;
+ animation: ken-burn-in 10s;
+ transform: scale(1.3);
+}
+
+@keyframes ken-burn-in {
+ 0% {
+     transform: scale(1.3);
+ }
+
+ 100% {
+     transform: scale(1);
+ }
+}
+
+.Operationbutton2{
+    width: 144px;
+    height: 64px;
+    border-radius: 50px;
+    font-size: 24px;
+    font-weight: bold;
+    background-color: rgb(146, 212, 54);
+    border: 0;
+    cursor: pointer;
+}
+.Operationbutton2:hover{
+    background-color: rgb(255, 0, 247);
+    color: whitesmoke;
+    box-shadow: 1px 1px 5px 1px rgb(133, 4, 253);
+    animation: ken-burn-in 10s;
+    transform: scale(1.1);
+   }
+   
+   @keyframes ken-burn-in {
+    0% {
+        transform: scale(1.1);
+    }
+   
+    100% {
+        transform: scale(1);
+    }
+   }
+#Mayor{
+    background-color: red;
+    border: 3px solid;
+    border-color:rgb(175, 0, 0);
+}
+#Mayor:hover{
+    background-color: rgb(0, 229, 255);
+    color: whitesmoke;
+    box-shadow: 1px 1px 5px 1px rgb(146, 237, 255);
+    animation: ken-burn-in 10s;
+    transform: scale(1.3);
+    border: 3px solid;
+    border-color:rgb(155, 238, 255) ;
+}
+#Menor{
+
+        background-color: red;
+        border: 3px solid;
+        border-color:rgb(175, 0, 0);
+    }
+#Menor:hover{
+        background-color: rgb(7, 134, 148);
+        color: whitesmoke;
+        box-shadow: 1px 1px 5px 1px rgb(1, 110, 135);
+        animation: ken-burn-in 10s;
+        transform: scale(1.3);
+        border: 3px solid;
+        border-color:rgb(0, 103, 123) ;
+}
+#Res{
+background-color: #000;
+color: whitesmoke;
+}
+#Res:hover{
+    background-color: darkblue;
+    color:aqua
+
+}
+  

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./calculator.css">
+    
+</head>
+<body>
+   <!--Calculator-->
+   <section class="BodyCalculator" id="BodyCalc">
+      <section class="Superior"></section>
+         <div>
+            <input type="text" placeholder="0" id="Result">
+        </div>
+        <div class="NumeralContainer">
+           <button class="Numbutton" onclick="datos(7)">7</button>
+           <button class="Numbutton" onclick="datos(8)">8</button>
+           <button class="Numbutton" onclick="datos(9)">9</button>
+           <button class="Numbutton" onclick="datos('/')">/</button>
+        </div>
+        <div class="NumeralContainer">
+            <button class="Numbutton" onclick="datos(4)">4</button>
+            <button class="Numbutton"onclick="datos(5)">5</button>
+            <button class="Numbutton"onclick="datos(6)">6</button>
+            <button class="Numbutton" onclick="datos('*')">x</button>
+         </div>
+         <div class="NumeralContainer">
+            <button class="Numbutton" onclick="datos(1)">1</button>
+            <button class="Numbutton" onclick="datos(2)">2</button>
+            <button class="Numbutton" onclick="datos(3)">3</button>
+            <button class="Numbutton" onclick="datos('-')">-</button>
+         </div>
+         <div class="NumeralContainer">
+            <button class="Numbutton" id="Res" onclick="reset()">C</button>
+            <button class="Numbutton" onclick="datos(0)">0</button>
+            <button class="Numbutton" onclick="datos('.')">.</button>
+            <button class="Numbutton" onclick="datos('+')">+</button>
+         </div>
+         <div class="NumeralContainer2">
+            <button class="Numbutton" id="Menor"onclick="datos('<')"><</button>
+            <button class="Numbutton" id="Mayor"onclick="datos('>')">></button>
+            <button class="Operationbutton2" onclick="operation()">=</button>
+         </div>
+         
+      </section>
+</body>
+
+<script src="./calculator.js"></script>
+</html>
